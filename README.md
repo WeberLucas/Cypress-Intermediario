@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Testes automatizados com Cypress - Intermediário
 
 👋 Seja bem-vinda(o)!
@@ -32,3 +33,7 @@ Vá para a seção [estrutura do curso](./lessons/_course-structure_.md).
 ___
 
 Este é mais um curso da [**Escola Talking About Testing**](https://udemy.com/user/walmyr).
+=======
+# Cypress-Intermediario
+Curso intermediario de Cypress
+>>>>>>> 6210751607ca8918589cae7ae951ae6af8c6d378
