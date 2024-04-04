@@ -58,7 +58,24 @@ Cypress.Commands.add('login', (
     cy.get('.qa-issuable-form-title').type(issue.title)
     cy.get('.qa-issuable-form-description').type(issue.description)
     cy.contains('Submit issue').click()
+
+  
   })
+  const accessToken = `Bearer ${Cypress.env('gitlab_access_token')}`
+
+Cypress.Commands.add('api_createProject', project => {
+  cy.request({
+    method: 'POST',
+    url: `/api/v4/projects/`,
+    body: {
+      name: project.name,
+      description: project.description,
+      initialize_with_readme: true
+    },
+    headers: { Authorization: accessToken },
+  })
+})
+
 
 
   
