@@ -1,9 +1,11 @@
 import { faker } from '@faker-js/faker'
+const options = { env: { snapshotOnly: true } }
+
 beforeEach(() => {
   cy.api_deleteProjects()
 })
 
-describe('Create Project', () => {
+describe('Create Project', options,() => {
   it('successfully', () => {
     const project = {
       name: `project-${faker.datatype.uuid()}`,
