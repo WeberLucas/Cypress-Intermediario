@@ -14,10 +14,13 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
+import 'cypress-plugin-api'// feedback visual ao rodar um teste de api!
+
+
 import './api_commands'
+import './cli_commands'
 import './gui_commands'
-import 'cypress-plugin-api'// importa a lib para
-// feedback visual ao rodar um teste de api!
+// importa a lib para
 
 
 // Alternatively you can use CommonJS syntax:

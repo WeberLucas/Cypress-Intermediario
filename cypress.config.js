@@ -8,7 +8,10 @@ module.exports = defineConfig({
       requestMode: true,
       snaptshotOnly: true
     },
+    experimentalRunAllSpecs: true,
+
   },
   fixturesFolder: false,
   video: false,
 })
+
